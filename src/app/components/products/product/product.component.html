@@ -1,0 +1,8 @@
+<div class="producto">
+  <h2>{{producto.title}}</h2>
+  <img src="{{producto.image}}">
+  <b>Precio: $ {{producto.price | currency}}</b>
+  <a routerLink="/products/{{producto.id}}">Detalle producto</a>
+  <button (click)="agregarCarrito()">Agregar carrito</button>
+</div>
+

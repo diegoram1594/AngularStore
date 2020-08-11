@@ -1,0 +1,5 @@
+<div class="contendor-productos">
+  <app-product *ngFor="let producto of products" (productoAgregado)="idProductoAgregado($event)"
+               [producto]="producto">
+  </app-product>
+</div>
