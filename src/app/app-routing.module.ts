@@ -3,6 +3,7 @@ import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
 import {ContactoComponent} from "./modules/contact/components/contacto.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {LayoutComponent} from "./components/layout/layout.component";
+import {AdminGuard} from "./admin.guard";
 
 const routes: Routes = [
   {
@@ -27,7 +28,8 @@ const routes: Routes = [
       {
         path : 'contact',
         //component : ContactoComponent
-        loadChildren : () => import("./modules/contact/contact.module").then(m => m.ContactModule)
+        loadChildren : () => import("./modules/contact/contact.module").then(m => m.ContactModule),
+        canActivate : [AdminGuard]
       }
     ]
   },
