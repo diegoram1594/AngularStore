@@ -2,7 +2,7 @@
   <h2>{{producto.title}}</h2>
   <img src="{{producto.image}}">
   <b>Precio: $ {{producto.price | currency}}</b>
-  <a routerLink="/products/{{producto.id}}">Detalle producto</a>
-  <button (click)="agregarCarrito()">Agregar carrito</button>
+  <button mat-stroked-button color="primary" routerLink="/products/{{producto.id}}">Detalle producto</button>
+  <button (click)="agregarCarrito()" mat-raised-button color="primary">Agregar carrito</button>
 </div>
 
