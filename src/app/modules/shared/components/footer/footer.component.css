@@ -1,0 +1,9 @@
+.row-text{
+  font-size: 15px;
+}
+.container-footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
