@@ -1,8 +1,23 @@
-<div class="producto">
+
+<!--<div class="producto">
   <h2>{{producto.title}}</h2>
   <img src="{{producto.image}}">
   <b>Precio: $ {{producto.price | currency}}</b>
   <button mat-stroked-button color="primary" routerLink="/products/{{producto.id}}">Detalle producto</button>
   <button (click)="agregarCarrito()" mat-raised-button color="primary">Agregar carrito</button>
-</div>
+</div>-->
 
+
+<mat-card >
+  <mat-card-header>
+    <mat-card-title>{{producto.title}}</mat-card-title>
+    <mat-card-subtitle>Precio: $ {{producto.price | currency}}</mat-card-subtitle>
+  </mat-card-header>
+  <img src="{{producto.image}}">
+  <mat-card-content>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-stroked-button color="primary" routerLink="/products/{{producto.id}}">Detalle producto</button>
+    <button (click)="agregarCarrito()" mat-raised-button color="primary">Agregar carrito</button>
+  </mat-card-actions>
+</mat-card>

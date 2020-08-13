@@ -20,7 +20,7 @@ export class ProductComponent implements OnInit, OnChanges {
 
   agregarCarrito(): void{
     console.log('Se agrega a carrito ' + this.producto.title);
-    this.productoAgregado.emit(this.producto.id);
+    //this.productoAgregado.emit(this.producto.id);
   }
 
 }
